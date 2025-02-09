@@ -62,7 +62,7 @@ export default function App() {
       )}
 
       <TextInput
-        label="Hor�rio (Ex: 14:00)"
+        label="Horário (Ex: 14:00)"
         value={hour}
         onChangeText={setHour}
         keyboardType="numeric"
@@ -81,7 +81,7 @@ export default function App() {
         renderItem={({ item }) => (
           <Card style={styles.card}>
             <Card.Content>
-              <Text>?? {item.date} ? {item.hour}</Text>
+              <Text>📅 {item.date} ⏰ {item.hour}</Text>
             </Card.Content>
             <Card.Actions>
               <Button onPress={() => deleteAppointment(item.id)}>Excluir</Button>
