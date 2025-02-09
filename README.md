@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+# 📅 Aplicativo de Agendamento Médico
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um **aplicativo simples de agendamento de consultas médicas** desenvolvido em **React Native**. O aplicativo permite que os usuários escolham uma **data e um horário** para agendar uma consulta, armazenando os dados localmente usando **AsyncStorage**.
 
-## Get started
+---
 
-1. Install dependencies
+## 📌 Funcionalidades
 
-   ```bash
-   npm install
-   ```
+✅ Agendar uma consulta selecionando **data e horário**  
+✅ Listar consultas já agendadas  
+✅ Excluir uma consulta  
+✅ **Armazenamento local** das consultas com **AsyncStorage**  
+✅ Interface amigável e intuitiva usando **React Native Paper**  
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## 🚀 Tecnologias Utilizadas
 
-In the output, you'll find options to open the app in a
+- **React Native** - Framework para desenvolvimento mobile  
+- **AsyncStorage** - Persistência de dados localmente  
+- **@react-native-community/datetimepicker** - Seleção de datas  
+- **React Native Paper** - Componentes de UI modernos e responsivos  
+- **Expo** - Plataforma para desenvolvimento e testes  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 💻 Como Executar o Projeto
 
-## Get a fresh project
+### **1️⃣ Pré-requisitos**
+- **Node.js** instalado
+- **Expo CLI** instalado globalmente (`npm install -g expo-cli`)
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+### **2️⃣ Clonar o Repositório**
+```sh
+git clone https://github.com/thiagorussi/agendamentoMedico.git
+cd agendamentoMedico
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### **3️⃣ Instalar Dependências**
+```sh
+npm install
+```
 
-## Learn more
+### **4️⃣ Executar o Aplicativo**
+```sh
+npx expo start
+```
+📱 Para testar no celular, basta escanear o **QR Code** exibido com o aplicativo **Expo Go**.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📜 Como Funciona?
 
-## Join the community
+1. **Selecionar uma data** – O usuário clica no botão "Selecionar Data" e escolhe um dia no calendário.  
+2. **Inserir o horário** – O usuário digita o horário da consulta.  
+3. **Agendar a consulta** – A consulta é salva localmente e aparece na lista.  
+4. **Excluir consulta** – O usuário pode remover um agendamento clicando no botão "Excluir".  
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🛠 Possíveis Melhorias Futuras
+
+🚀 Conectar com um **backend real** para sincronizar agendamentos em tempo real  
+📢 Implementar **notificações push** para lembrar os usuários sobre consultas  
+🔍 Adicionar um **filtro de busca** para facilitar a organização das consultas  
+
+---
+
+## 📜 Licença
+
+Este projeto é de código aberto e pode ser utilizado para fins acadêmicos e educacionais.
